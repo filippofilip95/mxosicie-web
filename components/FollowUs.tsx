@@ -10,7 +10,7 @@ const FollowUs: FC<Props> = () => {
     <section className={style.followUs}>
       <h2>Sleduj nás na sociálnych sieťach</h2>
       <div className={style.socialIcons}>
-        <a className={style.socialIcon} href='https://www.facebook.com/mxosicie/'>
+        <a href='https://www.facebook.com/mxosicie/' target='_blank'>
           <Image
             unoptimized
             src='/images/fb-icon.svg'
@@ -18,7 +18,7 @@ const FollowUs: FC<Props> = () => {
             height={60}
           />
         </a>
-        <a className={style.socialIcon} href='https://www.instagram.com/mx_osicie/'>
+        <a href='https://www.instagram.com/mx_osicie/' target='_blank'>
           <Image
             unoptimized
             src='/images/ig-icon.svg'
