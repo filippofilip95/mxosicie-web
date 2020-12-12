@@ -22,7 +22,7 @@ const Logo: FC<Props> = () => {
     const ay = (window.innerHeight / 2 - e.pageY) / 10;
 
     if (wrapper.current) {
-      wrapper.current.setAttribute("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
+      wrapper.current.setAttribute("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);");
     }
 
   }, []);
