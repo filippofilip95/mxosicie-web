@@ -31,6 +31,7 @@ const Logo: FC<Props> = () => {
   return (
     <div ref={wrapper} className='hoverPlane'>
       <Image
+        unoptimized
         src='/images/logo.svg'
         height={500}
         width={500}

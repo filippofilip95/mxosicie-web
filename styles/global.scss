@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 :root {
   --color-background: #adadad;
   --color-background-front: #fff;
+  --size-s: 0.5rem;
   --size-m: 1rem;
   --size-l: 2rem;
 }
 
 html * {
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -20,6 +24,7 @@ main {
   padding: var(--size-m);
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   perspective: 1000px;

@@ -1,0 +1,19 @@
+.followUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .socialIcons {
+    display: flex;
+
+    .socialIcon {
+      margin: var(--size-s);
+      overflow: visible;
+      transition: transform 0.1s ease;
+
+      &:hover {
+        transform: translateY(calc(-1 * var(--size-s)));
+      }
+    }
+  }
+}
