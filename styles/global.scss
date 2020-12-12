@@ -1,0 +1,46 @@
+:root {
+  --color-background: #adadad;
+  --color-background-front: #fff;
+  --size-m: 1rem;
+  --size-l: 2rem;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(var(--color-background), var(--color-background-front));
+}
+
+main {
+  height: 100vh;
+  padding: var(--size-m);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.hoverPlane {
+  pointer-events: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  display: flex;
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    bottom: 90px;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, .3);
+  }
+}
